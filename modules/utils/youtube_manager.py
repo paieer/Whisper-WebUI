@@ -4,11 +4,11 @@ import os
 
 
 def get_ytdata(link):
-    return YouTube(link)
+    return YouTube(link, use_po_token=True)
 
 
 def get_ytmetas(link):
-    yt = YouTube(link)
+    yt = YouTube(link, use_po_token=True)
     return yt.thumbnail_url, yt.title, yt.description
 
 
